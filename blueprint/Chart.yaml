@@ -1,5 +1,5 @@
 apiVersion: v2
-name: azure-virtual-machine
+name: portal-blueprint-page
 description: A Helm chart for deploying an Azure Virtual Machine
 
 # A chart can be either an 'application' or a 'library' chart.
