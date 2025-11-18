@@ -1,0 +1,28 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  chart:
+    # repo: {{ .Release.Name }}
+    url: {{ .Values.blueprint.url }}
+    version: {{ .Values.blueprint.version }}
+    {{- with .Values.blueprint.credentials }}
+    credentials:
+      {{- with .username }}
+      username: {{ . | quote }}
+      {{- end }}
+      {{- with .passwordRef }}
+      passwordRef:
+        {{- with .key }}
+        key: {{ . | quote }}
+        {{- end }}
+        {{- with .name }}
+        name: {{ . | quote }}
+        {{- end }}
+        {{- with .namespace }}
+        namespace: {{ . | quote }}
+        {{- end }}
+      {{- end }}
+    {{- end }}

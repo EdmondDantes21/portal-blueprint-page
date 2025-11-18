@@ -1,0 +1,66 @@
+# Default values for template.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# @schema
+# description: Blueprint properties
+# type: object
+# required: true
+# @schema
+blueprint:
+  # @schema
+  # description: Blueprints url
+  # type: string
+  # @schema
+  url: https://marketplace.krateo.io
+  # @schema
+  # description: Blueprints version
+  # type: string
+  # required: true
+  # @schema
+  version: 0.0.1
+  # @schema
+  # description: Blueprints dedicated page (Composition)
+  # type: boolean
+  # required: true
+  # default: true
+  # @schema
+  hasPage: false
+
+# @schema
+# description: Blueprint form properties 
+# type: object
+# required: true
+# @schema
+form:
+  # @schema
+  # description: Blueprint form keys order 
+  # type: boolean
+  # required: true
+  # default: false
+  # @schema
+  alphabeticalOrder: false
+
+# @schema
+# description: Blueprint panel properties 
+# type: object
+# required: true
+# @schema
+panel:
+  # @schema
+  # description: Blueprint panel title 
+  # type: string
+  # required: true
+  # @schema
+  title: GitHub Scaffolding
+  # @schema
+  # description: Blueprint panel icon properties 
+  # type: object
+  # @schema
+  icon:
+    # @schema
+    # description: Bleprint panel icon name 
+    # type: string
+    # required: true
+    # @schema
+    name: fa-cubes

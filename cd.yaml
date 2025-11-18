@@ -1,0 +1,9 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: portal-blueprint-page
+  namespace: krateo-system
+spec:
+  chart:
+    url: oci://ghcr.io/edmonddantes21/portal-blueprint-page/portal-blueprint-page
+    version: 1.0.5
