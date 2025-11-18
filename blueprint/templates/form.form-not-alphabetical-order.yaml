@@ -6,6 +6,10 @@ metadata:
   namespace: {{ .Release.Namespace }}
   annotations:
     "krateo.io/verbose": "true"
+  labels:
+    krateo.io/blueprint-form-name: {{ .Release.Name }}
+    krateo.io/blueprint-form-namespace: {{ .Release.Namespace }}
+    krateo.io/blueprint-form-path: blueprints
 spec:
   widgetData:
     schema: {}
