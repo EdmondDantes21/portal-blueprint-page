@@ -1,6 +1,6 @@
 apiVersion: v2
-name: portal-blueprint-page
-description: A Blueprint for Krateo Composable Portal Blueprint page
+name: azure-virtual-machine
+description: A Helm chart for deploying an Azure Virtual Machine
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -17,11 +17,8 @@ type: application
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
 version: 1.0.5
 
-home: https://krateo.io
-icon: "https://github.com/krateoplatformops/krateo/blob/main/docs/media/logo.svg"
-keywords:
-  - portal
-sources:
-  - https://github.com/krateoplatformops-blueprints/portal-blueprint-page
-annotations:
-  krateoSupportedVersion: ">= 2.6.0"
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+# It is recommended to use it with quotes.
+appVersion: "1.0.5"
